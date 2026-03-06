@@ -1,0 +1,94 @@
+:root {
+  --bg: #060d1a;
+  --bg-card: #0d1b2e;
+  --bg-hover: #122240;
+  --text: #d8eef7;
+  --text-muted: #6b92b4;
+  --accent: #9b6dff;
+  --accent-dim: #6b4ab8;
+  --ocean: #38bdf8;
+  --border: #1a2e47;
+  --font-sans: 'Noto Sans TC', system-ui, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--ocean);
+}
+
+h1, h2, h3 {
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--bg-card);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  color: var(--ocean);
+}
+
+pre {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
